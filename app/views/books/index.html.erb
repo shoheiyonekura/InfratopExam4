@@ -44,7 +44,7 @@
                   <p>
                     <%= link_to book_favorites_path(book), method: :delete do %>
                     <i class="fas fa-heart" style="color: #df0707;"></i>
-                    <%= book.favorites.count %>いいね
+                    <%= book.favorites.count %>
                     <% end %>
                   </p>
                 <% else %>
@@ -52,13 +52,13 @@
                     <%= link_to book_favorites_path(book), method: :post do %>
                     <i class="fas fa-heart" style="color: #437adb;"></i>
                     
-                    <%= book.favorites.count %>いいね
+                    <%= book.favorites.count %>
                     <% end %>
                   </p>
                 <% end %>
               </td>
               <td>
-                <p>コメント数 : </p><%= book.book_comments.count%>
+                <p>コメント数:<%= book.book_comments.count%></p>
               </td>
             </tr>
           <% end %>
